@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+.background-container {
+  background-image: linear-gradient(#fdb298, #b176fe);
+  width: 100%;
+  height: 500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calendar-container {
+  width: 55%;
+  margin: auto;
+  position: relative;
+  top: -500px;
+  padding-top: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weekdays-container {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  background: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weekdays-container .week-day {
+  color: #808080;
+}
+
+.calendar {
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  aligh-items: flex-start;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.calendar .week {
+  display: inline-flex;
+  align-item: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background: white;
+  border: none;
 }
